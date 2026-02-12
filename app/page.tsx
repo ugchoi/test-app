@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -19,6 +20,9 @@ export default function Home() {
           <p className="text-muted-foreground">
             Button과 Card 컴포넌트를 사용한 간단한 데모입니다.
           </p>
+          <Button variant="outline" asChild>
+            <Link href="/canvas-demo">Canvas 데이터 시각화 예제 →</Link>
+          </Button>
         </header>
 
         {/* Button variants */}
